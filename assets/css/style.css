@@ -1,85 +1,61 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
+/* Reset some defaults */
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f5f5f5;
-  color: #333;
-  padding-top: 70px; /* space for fixed navbar */
 }
 
-/* Navbar */
+/* Navbar container */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(45deg, #3a3d40, #18191a);
+  background: linear-gradient(135deg, #222, #444);
   padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  z-index: 1000;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Navbar links styled as glossy buttons */
+/* Navbar links */
 .navbar a {
-  margin: 5px 8px;
-  padding: 10px 18px;
-  background: linear-gradient(145deg, #4a90e2, #357ab7);
+  background: linear-gradient(145deg, #ff7f50, #ff4500);
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 25px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3),
-              -2px -2px 6px rgba(255,255,255,0.1);
-  transition: all 0.3s ease-in-out;
+  padding: 12px 20px;
+  margin: 0 6px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
-/* Hover effect (glossy shine) */
+/* Hover effect */
 .navbar a:hover {
-  background: linear-gradient(145deg, #5aa0ff, #2d65a0);
-  box-shadow: 0 0 10px rgba(90,160,255,0.7);
-  transform: translateY(-2px);
+  background: linear-gradient(145deg, #ff9966, #ff3300);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
-/* Active/current page look */
-.navbar a.active {
-  background: linear-gradient(145deg, #ff9800, #e67e22);
-  box-shadow: 0 0 12px rgba(255,152,0,0.8);
+/* Active (when clicked) */
+.navbar a:active {
+  transform: scale(0.95);
 }
 
-/* Headings */
+/* Page headings */
 h1 {
-  margin: 20px;
-  font-size: 30px;
-  color: #222;
   text-align: center;
+  margin-top: 40px;
+  color: #333;
 }
 
 /* Paragraphs */
 p {
-  margin: 20px auto;
-  font-size: 18px;
-  max-width: 800px;
   text-align: center;
-  line-height: 1.6;
+  color: #555;
+  font-size: 18px;
 }
 
-/* Images */
-img {
-  max-width: 90%;
-  height: auto;
-  margin: 20px auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
 body {
   background: pink !important;
 }
