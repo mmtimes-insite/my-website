@@ -10,7 +10,6 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #f4f8fc, #e6eef7);
   color: #333;
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -76,10 +75,11 @@ body {
   top: 52px;
   left: 0;
   background: #fff;
-  min-width: 180px;
+  min-width: 200px;
   border-radius: 10px;
   box-shadow: 0px 6px 18px rgba(0,0,0,0.3);
   z-index: 2000;
+  overflow: hidden;
 }
 
 .dropdown-content a {
@@ -88,6 +88,7 @@ body {
   text-decoration: none;
   display: block;
   font-weight: normal;
+  transition: background 0.3s;
   border-bottom: 1px solid #eee;
 }
 
@@ -103,13 +104,14 @@ body {
 main {
   flex: 1;
   text-align: center;
-  padding: 20px;
+  padding: 120px 20px 40px; /* 120px ensures headings clear navbar */
 }
 
 h1 {
   font-size: 34px;
   margin-bottom: 15px;
   color: #001830;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 p {
@@ -127,6 +129,11 @@ img {
   display: block;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 /* Footer */
@@ -158,8 +165,8 @@ footer {
   border: 6px solid #f3f3f3;
   border-top: 6px solid #0073ff;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   animation: spin 1s linear infinite;
 }
 
