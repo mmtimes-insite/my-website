@@ -55,8 +55,9 @@ body {
 
 /* Active page button */
 .navbar a.active {
-  background: linear-gradient(145deg, #1e90ff, #005bbb);
-  box-shadow: 0 0 14px rgba(30,144,255,0.9);
+  background: linear-gradient(145deg, #1e90ff, #005bbb) !important;
+  box-shadow: 0 0 14px rgba(30,144,255,0.9) !important;
+  transform: translateY(-3px);
 }
 
 /* Headings */
