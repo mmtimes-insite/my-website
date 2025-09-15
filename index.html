@@ -2,19 +2,43 @@
 <html>
 <head>
   <title>My Website</title>
-  <!-- This connects to your CSS in assets/css -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Simple navbar style */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="pages/rnd.html">Research & Development</a>
+    <a href="pages/products.html">Products</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+
   <h1>Hello, this is my first website!</h1>
+  <p>Welcome to the homepage.</p>
 
-  <!-- Link to another page -->
-  <a href="rnd.html">Research & Development</a>
-
-  <!-- This shows your image from assets/images -->
   <img src="assets/images/rnd-image1.jpg" alt="R&D image">
-
-  <!-- This connects to your JavaScript in assets/js -->
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
