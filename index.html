@@ -9,11 +9,24 @@
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
+  <!-- Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
   <header>
     <div class="navbar">
       <a href="index.html" class="active">Home</a>
       <a href="pages/rnd.html">R&D</a>
-      <a href="pages/products.html">Products</a>
+      
+      <!-- Dropdown Example -->
+      <div class="dropdown">
+        <button class="dropbtn">Products</button>
+        <div class="dropdown-content">
+          <a href="pages/products.html">All Products</a>
+          <a href="pages/products-laptops.html">Laptops</a>
+          <a href="pages/products-electronics.html">Electronics</a>
+        </div>
+      </div>
+
       <a href="pages/procurement.html">Procurement</a>
       <a href="pages/students.html">Students</a>
       <a href="pages/workshops.html">Workshops</a>
